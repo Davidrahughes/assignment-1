@@ -299,3 +299,75 @@ text-align: center;
 .candid {
     text-align: left;
 }
+
+/* contact section*/
+
+#contact {
+    background-color: #232323;
+    padding: 0;
+    margin: 0;
+}
+
+#contact .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0 75px 0;
+}
+
+#contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.contact h4 {
+    text-align: left;
+}
+
+.update h4 {
+    text-align: center;
+}
+
+.contact {
+    text-align: left;
+} 
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact li p {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    margin: 0 0 5px 0;
+}
+
+.update li p {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.pages li p {
+    margin: 0 0 0 0;
+    text-align: right;
+}
+
+.update form {
+    display: inline-block;
+}
+
+.update input {
+    height: 50.5px;
+    width: 400px;
+    border: 0;
+    margin: 0;
+}
+
+.update li:last-child {
+    display: flex;
+}
