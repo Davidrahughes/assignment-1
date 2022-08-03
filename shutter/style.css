@@ -190,6 +190,14 @@ nav li:last-child {
     transform: rotate(-405deg);
 }
 
+.menu-hamburger a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+
 /* about section */
 
 #about {
@@ -379,11 +387,11 @@ text-align: center;
 }
 
 #contact h4 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    margin: 0 0 5px 0;
+    margin: 0px 0 5px 0;
 }
 
 .contact h4 {
@@ -398,13 +406,17 @@ text-align: center;
     text-align: right;
 } 
 
+.pages a {
+    display: block;
+}
+
 .contact ul {
     display: flex;
     flex-direction: column;
 }
 
 #contact li p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
     font-family: 'Lato', sans-serif;
     margin: 0 0 5px 0;
@@ -413,13 +425,16 @@ text-align: center;
 .update p { 
     text-align: center;
     padding-bottom:15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
 }
 
 .pages li {
     text-transform: uppercase;
     margin: 0 0 0 0;
     text-align: right;
-    font-size: 17px;
+    font-size: 15px;
 
 }
 
@@ -466,7 +481,6 @@ footer p {
 }
 
 @media (max-width:995px){
-
     section {
         padding: 50px 0 50px 0;
     }
@@ -486,11 +500,9 @@ footer p {
         position: absolute;
         top: 0;
         margin-top: 100px;
-        left: 0;
-        flex-direction: column;
+        right: 0px;
         width: 100%;
         justify-content: center;
-        align-items: center;
         list-style-type: none;
     }
 
@@ -502,6 +514,7 @@ footer p {
         transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
         display: none;
     }
+
     #menu-toggle:checked ~ .menu-hamburger li {
         border: 1px solid #000;
         height: 1.75em;
@@ -509,14 +522,17 @@ footer p {
         transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
         display: flex;
     }
+
     nav .menu-hamburger > li {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 5em 0;
-        width: 100%;
+        max-width: 50%;
         color:#000;
-        background-color: #e7a8e6;
+        background: #e7a8e6;
+        opacity: .6;
     }
 
     .socials {
@@ -526,9 +542,6 @@ footer p {
     .wrapper-header h1 {
         padding-bottom: 300px;
     }
-
-    /* about section */
-
 
     /* gallery */
 
@@ -576,19 +589,64 @@ footer p {
         padding: 0;
     }
 
+    #behind img {
+        padding: 0;
+    }
+
+    #behind .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* blog */
+
+    #blog .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #blog p {
+        text-align: center;
+    }
+
+    #blog button {
+        margin-bottom: 50px;
+    }
+
 /* contact section */
 
     #contact .wrapper {
-        display: flex;
+        align-items: center;
+        justify-content: baseline;
         flex-wrap: wrap;
+        max-width: 375px;
+    }
+
+    #contact h4 {
+        text-align: center;
     }
 
     #contact .contact{
-        order: 1;
+        order: 2;
+        padding-bottom: 20px;
     }
 
     #contact .pages {
         order: 2;
+        padding-bottom: 20px;
+    }
+    .pages li {
+        text-align: center;
+        padding-bottom: 7px;
+    }
+
+    #contact li p {
+        text-align: center;
+        padding-bottom: 5px;
     }
 
     .update button {
@@ -596,8 +654,15 @@ footer p {
     }
     .update input {
         width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
+    #contact form {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
     
 }
 
