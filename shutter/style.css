@@ -30,6 +30,42 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 125px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 100px;
+    padding: 0;
+    margin-bottom: 100px;
+    margin: 30px 0 0 0;
+}
+
+h2{
+    font-size: 42px;
+    color: #232323;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    margin: 100px 0 35px 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 0px 0 5px 0;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -58,6 +94,11 @@ button {
     padding: 15px 30px;
 }
 
+button:hover, :focus {
+    background-color: #000;
+    color: #e7a8e6;
+}
+
 /* header styles */
 
 header {
@@ -71,7 +112,10 @@ header {
 
 .home {
     height: 100vh;
+}
 
+.home h2 {
+    color: #FCFCFC;
 }
 
 header section {
@@ -81,11 +125,6 @@ header section {
 header .wrapper {
     display: flex;
     justify-content: space-between;
-}
-
-header h1 {
-    margin: 30px 0 0 0;
-    font-size: 32px;
 }
 
 nav .menu-hamburger {
@@ -118,15 +157,6 @@ nav li:last-child {
     text-align: center;
     line-height: 10px;
     display: block;
-}
-
-.wrapper-header h1 {
-    font-size: 125px;
-    text-transform: capitalize;
-    text-align: center;
-    line-height: 100px;
-    padding: 0;
-    margin-bottom: 100px;
 }
 
 .wrapper-header ul {
@@ -205,9 +235,7 @@ nav li:last-child {
 }
 
 #about h2 {
-    font-size: 42px;
     text-transform: capitalize;
-    color: #232323;
     text-align: center;
 }
 
@@ -239,7 +267,7 @@ text-align: center;
     display: block;
 }
 
-/* gallery */
+/* gallery section */
 
 .gallery ul {
     display: flex;
@@ -250,7 +278,7 @@ text-align: center;
     width: 31%;
 }
 
-/* mid nav */
+/* mid nav section */
 
 .mid-nav {
     background-image: url(../shutter/shutter-assets/asset-5.jpg);
@@ -282,7 +310,7 @@ text-align: center;
     margin: 0 auto;
 }
 
-/* Behind the Lens */
+/* behind section */
 
 .behind-flex {
     display: flex;
@@ -305,7 +333,7 @@ text-align: center;
     color: #232323;
     text-align: left;
     margin: 0;
-    padding-bottom: 25px;
+    padding: 25px 0 25px 0;
 }
 
 .text-container p {
@@ -321,7 +349,7 @@ text-align: center;
     text-align: left;
 }
 
-/* Blog */
+/* blog section */
 
 #blog {
     background-color: #f0f5ff;
@@ -335,14 +363,6 @@ text-align: center;
 
 #blog li {
     width: 100%;
-}
-
-#blog h3 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    text-transform: capitalize;
-    margin: 100px 0 35px 0;
 }
 
 #blog p {
@@ -384,14 +404,6 @@ text-align: center;
     align-items: center;
     justify-content: space-around;
     padding: 50px 0 75px 0;
-}
-
-#contact h4 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    margin: 0px 0 5px 0;
 }
 
 .contact h4 {
@@ -450,7 +462,6 @@ text-align: center;
     width: 500px;
 }
 
-
 /* footer */
 
 footer {
@@ -470,6 +481,7 @@ footer p {
 }
 
 /* responsive */
+
 @media (max-width: 1335px){
     #blog .nature-flex {
         flex-direction: column-reverse;
@@ -478,6 +490,20 @@ footer p {
     #blog .candid-flex {
         flex-direction: column;
     }
+
+    #blog p {
+        text-align: center;
+    }
+
+    #blog button {
+        margin-bottom: 50px;
+    }
+
+    #blog .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width:995px){
@@ -485,7 +511,7 @@ footer p {
         padding: 50px 0 50px 0;
     }
 
-    /* nav */
+    /* nav section */
 
     header {
         background-repeat: no-repeat;
@@ -554,7 +580,7 @@ footer p {
         font-size: 25px;
     }
 
-    /* gallery */
+    /* gallery section */
 
     .gallery .wrapper {
         width: 100%;
@@ -572,7 +598,7 @@ footer p {
         width: 100%;
     }
 
-    /* mid-nav */
+    /* mid-nav section */
 
     .mid-nav {
         background-color: #232323;
@@ -609,23 +635,6 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    /* blog */
-
-    #blog .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #blog p {
-        text-align: center;
-    }
-
-    #blog button {
-        margin-bottom: 50px;
     }
 
 /* contact section */
