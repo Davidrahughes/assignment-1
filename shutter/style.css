@@ -69,6 +69,11 @@ header {
     position: relative;
 }
 
+.home {
+    height: 100vh;
+
+}
+
 header section {
     padding: 0;
 }
@@ -101,9 +106,10 @@ nav li:last-child {
 }
 
 .wrapper-header {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
+    height: calc(100vh - 84.3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .wrapper-header span {
     font-family: 'Lato', sans-serif;
@@ -120,7 +126,7 @@ nav li:last-child {
     text-align: center;
     line-height: 100px;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .wrapper-header ul {
@@ -275,8 +281,9 @@ text-align: center;
     justify-content: space-between;
 }
 
-#behind .img-container {
-    width: 40%;
+#behind img {
+    min-width: 250px;
+    max-width: 400px;
     padding-right: 60px;
 }
 
@@ -403,19 +410,24 @@ text-align: center;
     margin: 0 0 5px 0;
 }
 
-.update li p { 
+.update p { 
     text-align: center;
     padding-bottom:15px;
 }
 
-.pages li p {
+.pages li {
     text-transform: uppercase;
     margin: 0 0 0 0;
     text-align: right;
+    font-size: 17px;
+
 }
 
 .update form {
-    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .update input {
@@ -423,10 +435,6 @@ text-align: center;
     width: 500px;
 }
 
-.update li:last-child {
-    display: flex;
-    padding-bottom: 20px;
-}
 
 /* footer */
 
@@ -456,7 +464,6 @@ footer p {
         flex-direction: column;
     }
 }
-
 
 @media (max-width:995px){
 
@@ -517,7 +524,7 @@ footer p {
     }
 
     .wrapper-header h1 {
-        padding-bottom: 500px;
+        padding-bottom: 300px;
     }
 
     /* about section */
@@ -542,7 +549,6 @@ footer p {
     }
 
     /* mid-nav */
-    
 
     .mid-nav {
         background-color: #232323;
@@ -560,8 +566,7 @@ footer p {
     }
 
     /* behind section */
-
-
+    
     .behind-flex {
         flex-direction: column;
         align-items: center;
@@ -570,4 +575,33 @@ footer p {
     .behind-flex.img-container {
         padding: 0;
     }
+
+/* contact section */
+
+    #contact .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #contact .contact{
+        order: 1;
+    }
+
+    #contact .pages {
+        order: 2;
+    }
+
+    .update button {
+        width: 100%;
+    }
+    .update input {
+        width: 100%;
+    }
+
+    
 }
+
+
+
+
+

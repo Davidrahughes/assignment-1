@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <section id="home">
+        <section id="home" class="home">
             <div class="wrapper">
             <h2>Shutter</h2>
                 <nav>
@@ -187,23 +187,15 @@
                 </div><!-- end of contact -->
                 
                 <div class="update">
-                    <ul>
-                        <li>
                             <h4>stay updated</h4>
-                        </li>
-                        <li>
+
                             <p>Subscribe to our newsletter to stay updated.</p>
-                        </li>
-                        <li>
+
                             <form action="#">
                                 <input name="myvalue" type="text" onfocus="if(this.value=='email address')this.value='';"
                                     onblur="if(this.value=='')this.value='email address';">
+                                    <button>Subscribe</button>
                             </form>
-                                <a href="#">
-                                <button>Subscribe</button>
-                            </a>
-                        </li>
-                    </ul>
                 </div><!-- end of update -->
 
                 <div class="pages">
@@ -212,16 +204,17 @@
                             <h4>pages</h4>
                         </li>
                         <li>
-                            <p>Home</p>
+                            <a href="#home">Home</a>
+                            
                         </li>
                         <li>
-                            <p>About</p>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <p>Blog</p>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li>
-                            <p>Contact</p>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div><!-- end of pages -->
